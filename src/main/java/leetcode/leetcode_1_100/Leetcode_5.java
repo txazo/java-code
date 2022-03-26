@@ -10,7 +10,7 @@ package leetcode.leetcode_1_100;
 public class Leetcode_5 {
 
     /**
-     * 中心扩散法
+     * 中心扩散法、双指针
      */
     public String longestPalindrome(String s) {
         if (s == null || s.length() < 1) {

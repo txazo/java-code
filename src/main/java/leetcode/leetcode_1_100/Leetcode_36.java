@@ -19,6 +19,9 @@ package leetcode.leetcode_1_100;
  */
 public class Leetcode_36 {
 
+    /**
+     * 标记数组
+     */
     public boolean isValidSudoku(char[][] board) {
         int[][] row = new int[9][10];
         int[][] col = new int[9][10];

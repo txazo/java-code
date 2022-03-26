@@ -12,6 +12,9 @@ import java.util.List;
  */
 public class Leetcode_22 {
 
+    /**
+     * 回溯法
+     */
     public List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<>();
         // 回溯法

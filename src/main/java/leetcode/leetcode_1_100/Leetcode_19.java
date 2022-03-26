@@ -25,8 +25,10 @@ public class Leetcode_19 {
     }
 
     private int reverse(ListNode pre, ListNode curr, int n) {
-        int index = curr == null ? 0 :
-                reverse(pre.next, curr.next, n) + 1;
+        if (curr == null) {
+            return 0;
+        }
+        int index = reverse(pre.next, curr.next, n) + 1;
         if (index == n) {
             // 删除倒数第n个节点
             pre.next = curr.next;

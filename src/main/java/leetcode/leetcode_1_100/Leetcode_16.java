@@ -5,12 +5,19 @@ import java.util.Arrays;
 /**
  * 16、最接近的三数之和
  * <p>
- * 给定一个包括 n 个整数的数组 nums 和 一个目标值 target。找出 nums 中的三个整数，使得它们的和与 target 最接近。返回这三个数的和。假定每组输入只存在唯一答案。
+ * 给你一个长度为 n 的整数数组 nums 和 一个目标值 target。请你从 nums 中选出三个整数，使它们的和与 target 最接近。
+ * <p>
+ * 返回这三个数的和。
+ * <p>
+ * 假定每组输入只存在恰好一个解。
  * <p>
  * https://leetcode-cn.com/problems/3sum-closest/
  */
 public class Leetcode_16 {
 
+    /**
+     * 排序、双指针
+     */
     public int threeSumClosest(int[] nums, int target) {
         // 排序
         Arrays.sort(nums);

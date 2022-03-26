@@ -17,6 +17,9 @@ import java.util.List;
  */
 public class Leetcode_39 {
 
+    /**
+     * 回溯法
+     */
     public List<List<Integer>> combinationSum(int[] candidates, int target) {
         List<List<Integer>> res = new ArrayList<>();
         if (candidates == null || candidates.length < 1) {

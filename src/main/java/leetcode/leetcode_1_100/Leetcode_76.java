@@ -4,8 +4,23 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Objects;
 
+/**
+ * 76、最小覆盖子串
+ * <p>
+ * 给你一个字符串 s 、一个字符串 t 。返回 s 中涵盖 t 所有字符的最小子串。如果 s 中不存在涵盖 t 所有字符的子串，则返回空字符串 "" 。
+ * <p>
+ * 注意：
+ * <p>
+ * 对于 t 中重复字符，我们寻找的子字符串中该字符数量必须不少于 t 中该字符数量。
+ * 如果 s 中存在这样的子串，我们保证它是唯一的答案。
+ * <p>
+ * https://leetcode-cn.com/problems/minimum-window-substring/
+ */
 public class Leetcode_76 {
 
+    /**
+     * 滑动窗口、哈希表
+     */
     public String minWindow(String s, String t) {
         Map<Character, Integer> need = new HashMap<>();
         // 当前窗口
@@ -29,8 +44,7 @@ public class Leetcode_76 {
                 }
             }
 
-            System.out.println(String.format("window: [%d, %d]", left, right));
-
+            // 收缩滑动窗口
             while (valid == need.size()) {
                 if (right - left < minLength) {
                     minStart = left;
@@ -47,10 +61,6 @@ public class Leetcode_76 {
             }
         }
         return minLength == Integer.MAX_VALUE ? "" : s.substring(minStart, minStart + minLength);
-    }
-
-    public static void main(String[] args) {
-        System.out.println(new Leetcode_76().minWindow("ADBECFEBANC", "ABC"));
     }
 
 }

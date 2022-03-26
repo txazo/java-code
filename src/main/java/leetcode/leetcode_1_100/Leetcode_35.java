@@ -11,6 +11,9 @@ package leetcode.leetcode_1_100;
  */
 public class Leetcode_35 {
 
+    /**
+     * 二分查找
+     */
     public int searchInsert(int[] nums, int target) {
         int lo = 0, hi = nums.length - 1;
         while (lo < hi) {
@@ -23,6 +26,8 @@ public class Leetcode_35 {
                 lo = mid + 1;
             }
         }
+        // 1、边界最小值: lo = 0
+        // 2、边界最大值: lo = nums.length - 1
         return target > nums[lo] ? lo + 1 : lo;
     }
 

@@ -15,6 +15,9 @@ import java.util.List;
  */
 public class Leetcode_15 {
 
+    /**
+     * 排序、双指针
+     */
     public List<List<Integer>> threeSum(int[] nums) {
         List<List<Integer>> res = new ArrayList<>();
         if (nums == null || nums.length < 3) {

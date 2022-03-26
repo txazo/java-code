@@ -1,5 +1,8 @@
 package leetcode.leetcode_1_100;
 
+/**
+ * @see Leetcode_5
+ */
 public class Leetcode_5_1 {
 
     /**

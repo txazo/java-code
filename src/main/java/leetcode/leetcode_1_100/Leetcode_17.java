@@ -15,6 +15,7 @@ import java.util.List;
 public class Leetcode_17 {
 
     private static final String[] CHAR_MAP = new String[]{
+            // 2    3      4      5      6      7       8      9
             "abc", "def", "ghi", "jkl", "mno", "pqrs", "tuv", "wxyz"
     };
 
