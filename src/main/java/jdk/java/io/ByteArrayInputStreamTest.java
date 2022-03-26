@@ -5,6 +5,8 @@ import org.junit.Test;
 import java.io.*;
 
 /**
+ * 内存流
+ *
  * @see ByteArrayInputStream，从byte[]读取数据
  * @see ByteArrayOutputStream，写入数据到byte[]
  * @see CharArrayReader

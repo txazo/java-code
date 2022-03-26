@@ -6,7 +6,6 @@ import java.io.*;
 
 /**
  * 缓冲流
- * <p>
  *
  * @see BufferedInputStream
  * @see BufferedOutputStream

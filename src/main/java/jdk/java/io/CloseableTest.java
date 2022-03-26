@@ -5,6 +5,8 @@ import org.junit.Test;
 import java.io.*;
 
 /**
+ * 资源关闭接口
+ *
  * @see Closeable
  * @see AutoCloseable
  */

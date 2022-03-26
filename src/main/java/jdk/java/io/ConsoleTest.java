@@ -25,7 +25,7 @@ public class ConsoleTest {
                 console.printf("exit!").printf("\n");
                 break;
             }
-            console.printf("你输入: ").printf(line).printf("\n");
+            console.printf("机器人: ").printf(line).printf("\n");
         }
     }
 
