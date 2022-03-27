@@ -1,5 +1,8 @@
 package leetcode.leetcode_101_200;
 
+/**
+ * @see Leetcode_141
+ */
 public class Leetcode_141_1 {
 
     /**

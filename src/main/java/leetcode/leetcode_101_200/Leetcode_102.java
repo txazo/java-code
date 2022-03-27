@@ -28,6 +28,9 @@ public class Leetcode_102 {
             List<Integer> level = new ArrayList<>();
             for (int i = 0; i < n; i++) {
                 TreeNode node = queue.poll();
+                if (node == null) {
+                    continue;
+                }
                 level.add(node.val);
                 if (node.left != null) {
                     queue.add(node.left);
