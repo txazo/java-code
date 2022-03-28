@@ -8,6 +8,12 @@ import java.io.*;
 
 /**
  * 对象序列化/反序列化
+ * <p>
+ * 1、序列化优先级: Externalizable > writeObject/readObject > 默认字段
+ * 2、transient
+ * 3、serialVersionUID
+ * 4、writeReplace，write时替换为新的Object
+ * 5、readResolve，先read，再执行readResolve()替换为新的Object
  */
 public class SerializableTest {
 
